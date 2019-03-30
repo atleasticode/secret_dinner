@@ -1,0 +1,108 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 100px;
+}
+
+body, html {
+    height: 100%;
+}
+
+#background, #intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#background {
+    background: url(img/bar.jpg) no-repeat bottom center fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#intro {
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-shadow: 1px 2px 3px rgba(45, 45, 45, 0.7);
+}
+
+h1, h2, a {
+    color: rgb(250, 250, 250);   
+    text-align: center;
+}
+
+h1, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    animation: secret 5s ease alternate;
+}
+
+@keyframes secret {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 0.4rem;
+    animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0%, 100%{
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0,0.2rem);
+    }
+}
+
+a {
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1065px) {
+    * {
+        font-size: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    * {
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 0.5rem;
+    }
+
+    a {
+        font-size: 0.4rem;
+    }
+}
+
+

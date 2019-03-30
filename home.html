@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles_home.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+    <script charset="utf-8" src="freeprefix.js"></script>
+    <script charset="utf-8" src="script.js"></script>
+    <title>Secret Dinner</title>
+</head>
+<body>
+<!--Headerbild-->
+    <div id="header_bild">
+        <h1>Secret Dinner</h1>
+        <h2>Ein unvergessliches Erlebnis</h2>
+    </div>
+
+<!--Navigation-->
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#intro">Was wir machen</a></li>
+            <li><a href="#more">Was dich erwartet</a></li>
+            <li><a href="#galerie">Bildergalerie</a></li>
+            <li><a href="#anmeldung">Dinner buchen</a></li> 
+        </ul>
+    </nav>
+
+    <nav>
+        <ul id="navbar_mobile">
+            <li><a href="#intro">Was wir machen</a></li>
+            <li><a href="#more">Was dich erwartet</a></li>
+            <li><a href="#galerie">Bildergalerie</a></li>
+            <li><a href="#anmeldung">Dinner buchen</a></li> 
+        </ul>   
+    </nav>
+
+    
+
+
+<!--Intro-->
+    <div id="intro">
+        <h2>Ein Dinner, das du nie vergisst!</h2>
+        <p>Eine unbekannte Location entdecken, neue Menschen kennenlernen und gemeinsam gutes Essen genießen? Dein persönliches Secret Dinner bringt neue Perspektiven in deinen Alltag und lässt dich obendrein neue Kontakte knüpfen. Schau dich auf unserer Seite um und mach dich bereit für ein Abendessen der Extraklasse.</p>
+        <a href="#anmeldung">Jetzt buchen!</a>
+    </div>
+
+<!--Vorstellungsbereich-->
+      <section id="more">
+        <article>
+            <h3>Das Essen</h3>
+            <p>Bei jedem Secret Dinner werden insgesamt fünf ausgewählte Gänge serviert, die unsere Küchenprofis mit viel Liebe für deine Tischnachbarn und dich zubereiten. Wir achten bei der Zusammenstellung des Menüs auf regionale Zutaten und hohe Qualität.</p>
+        </article>
+        <img src="img/essen.jpg" alt="Essen">
+    </section>
+    <section>
+        <img id="bottle" src="img/bottle.jpg" alt="Weinflaschen">
+        <article>
+            <h3>Die Getränke</h3>
+            <p>Gemeinsam mit dem Chefkoch wählt unser Sommelier zu jedem Gang den passenden Begleitwein aus. Vom Riesling bis zum Chardonnay halten wir einige Gaumenfreuden für dich parat. Lass dich von unserer Auswahl überraschen!</p>
+        </article>
+        <img id="bottle_mobile" src="img/bottle.jpg" alt="Weinflaschen">
+    </section>
+    <section>
+        <article>
+            <h3>Die Tischgesellschaft</h3>
+            <p>Was nützt ein toller Wein und leckeres Mahl ohne eine gute Begleitung? Kein Problem – die Tischgesellschaft deines Secret Dinners ist bunt gemischt und ermöglicht es dir, über den eigenen Tellerrand hinauszuschauen – im wahrsten Sinne des Wortes. </p>
+        </article>
+        <img src="img/gaeste.jpg" alt="Menschen an einem Tisch">
+    </section>
+
+<!--Bildergalerie-->
+    <div id="galerie">
+        <h2>Eindrücke von unseren vergangenen Events</h2>
+        <div id="bilder">
+            <img src="img/sommelier.jpg" alt="Secret Dinner Sommelier">
+            <img src="img/secret_dinner_food.jpg" alt="Schmorgemüse">
+            <img src="img/gedeck.jpg" alt="Gedeck">
+            <img src="img/glaeser.jpg" alt="Gläser">
+        </div>
+    </div>
+
+<!--Anmeldeformular-->
+    <div id="anmeldung">
+        <h2>Buche dein Secret Dinner</h2>
+        <p>Du bist auf den Geschmack gekommen? Dann sichere dir jetzt deinen Platz beim nächsten Secret Dinner. Wir freuen uns auf dich!</p>
+        <form id="anmeldeformular">
+            <label for="vorname">Vorname</label>
+            <input id="vorname" type="text"><br/>
+            <label for="nachname">Name</label>
+            <input id="nachname" type="text"><br/>
+            <label for="email">Email-Adresse</label>
+            <input id="email" type="text">
+
+            <legend>Essenswünsche</legend>
+            <fieldset>
+                <input id="vegetarisch" type="checkbox" name="essenswuensche">
+                <label for="vegetarisch">vegetarisch</label>
+                <input id="vegan" type="checkbox" name="essenswuensche">
+                <label for="vegan">vegan</label>
+                <input id="glutenfrei" type="checkbox" name="essenswuensche">
+                <label for="glutenfrei">glutenfrei</label>
+                <input id="laktosefrei" type="checkbox" name="essenswuensche">
+                <label for="laktosefrei">laktosefrei</label>
+            </fieldset>
+            <legend>Datum</legend>
+            <fieldset>
+                <input id="januar" type="radio" name="datum">
+                <label for="januar">15.01.2019</label>
+                <input id="februar" type="radio" name="datum">
+                <label for="februar">20.02.2019</label>
+                <input id="maerz" type="radio" name="datum">
+                <label for="maerz">12.03.2019</label>
+            </fieldset>
+        </form>
+        <button type="submit" form="anmeldeformular">Secret Dinner buchen</button>
+    </div>
+
+
+<!--Footer-->
+    <footer>
+        <address>
+            <b>Secret Dinner GmbH</b> </br>
+            Unter den Linden 18a </br>
+            10117 Berlin </br>
+        </address>
+        <address>
+            Tel.: 030/445 334 1 </br>
+            E-Mail: <a href="mailto:info@secretdinner.de">info@secretdinner.de</a>
+        </address>
+        <button id="newsletter_button">Newsletter</button>
+    </footer>
+    <div id="overlay">
+        <span id="close_window">Schließen</span>
+        <h2 id="overlay_h2">Melde dich für unseren Newsletter an!</h2>
+        <label for="email_newsletter">Email-Adresse:</label>
+        <input id="email_newsletter" type="text">
+        <img src="img/send_icon.png" alt="senden">
+    </div>
+</body>
+</html>
